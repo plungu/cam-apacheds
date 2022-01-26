@@ -76,13 +76,13 @@ member: cn=john,ou=people,dc=example,dc=com
 dn: cn=tenant1,ou=groups,dc=example,dc=com
 objectClass: groupOfNames
 objectClass: top
-cn: camunda-users
+cn: tenant1
 member: cn=joe,ou=people,dc=example,dc=com
 member: cn=jane,ou=people,dc=example,dc=com
 
 dn: cn=tenant2,ou=groups,dc=example,dc=com
 objectClass: groupOfNames
 objectClass: top
-cn: camunda-users
+cn: tenant2
 member: cn=judy,ou=people,dc=example,dc=com
 member: cn=john,ou=people,dc=example,dc=com
