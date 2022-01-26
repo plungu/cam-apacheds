@@ -8,7 +8,7 @@ RUN dpkg -i /tmp/installer.deb
 RUN mkdir /ldifs
 
 COPY ldifs/* /ldifs/
-COPY conf/wrapper.conf /opt/apacheds-2.0.0.AM25/conf
+COPY conf/wrapper.conf /opt/apacheds-2.0.0.AM26/conf
 
 EXPOSE 10389 10636 11001
 
