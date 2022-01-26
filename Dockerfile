@@ -1,10 +1,10 @@
 FROM openjdk:11
 
-RUN apt-get update && apt-get install -y xinetd ldap-utils gettext-base 
+RUN apt-get update && apt-get install -y xinetd ldap-utils gettext-base
 
-ADD http://apache.spinellicreations.com//directory/apacheds/dist/2.0.0.AM25/apacheds-2.0.0.AM25-amd64.deb /tmp/installer.deb
+ADD https://downloads.apache.org//directory/apacheds/dist/2.0.0.AM26/apacheds-2.0.0.AM26-amd64.deb /tmp/installer.deb
 
-RUN dpkg -i /tmp/installer.deb 
+RUN dpkg -i /tmp/installer.deb
 RUN mkdir /ldifs
 
 COPY ldifs/* /ldifs/
