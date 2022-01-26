@@ -9,6 +9,16 @@ objectClass: organizationalUnit
 objectClass: top
 ou: groups
 
+dn: ou=tenants1,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: tenants1
+
+dn: ou=tenants2,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: tenants2
+
 dn: ou=people,dc=example,dc=com
 objectClass: organizationalUnit
 objectClass: top
@@ -73,14 +83,14 @@ objectClass: top
 cn: camunda-users
 member: cn=john,ou=people,dc=example,dc=com
 
-dn: cn=tenant1,ou=groups,dc=example,dc=com
+dn: cn=tenant1,ou=tenants1,dc=example,dc=com
 objectClass: groupOfNames
 objectClass: top
 cn: tenant1
 member: cn=joe,ou=people,dc=example,dc=com
 member: cn=jane,ou=people,dc=example,dc=com
 
-dn: cn=tenant2,ou=groups,dc=example,dc=com
+dn: cn=tenant2,ou=tenants2,dc=example,dc=com
 objectClass: groupOfNames
 objectClass: top
 cn: tenant2
